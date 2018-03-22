@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Library</title>
+</head>
+<body>
+<h1 style="text-align: center;">Вас вітає центральна бібліотека! </h1>
+<strong>Будь ласка пройдіть реєстрацію:</strong>
+
+
+
+<br />
+<form name="f1" method="get" action="enter_data.php">
+<input name="link" type="hidden" value="index.php" />
+<br />
+Ведіть ваш email: <br />
+<input name="login" type="text" size="25" maxlength="30" value="...@gmail.com" /> <br />
+Ведіть пароль: <br />
+<input name="pd" type="password" size="25" maxlength="30" value="" /> <br />
+Підтвердіть пароль: <br />
+<input name="pd" type="password" size="25" maxlength="30" value="" /> <br />
+<input name="remember" type="checkbox" value="yes" /> Запам'ятати <br />
+<input type="submit" name="enter" value="Ок" />
+</form>
+<br/>
+<em>Додаткова інформація</em><br/>
+
+
+<form name="male_female" action="" method="post">
+<br />
+Виберіть стать:<br />
+<input type="radio" name="Sex" value="Чоловіча" checked="checked" /> Ч<br />
+<input type="radio" name="Sex" value="Жіноча" /> Ж<br />
+Виберіть фото:<br />
+<input name="send_f" type="file" size="30" maxlength="60" /> <br />
+Чим ви займаєтесь?<br />
+<form  method="post" name="drop_down_box">
+<select name="menu" size="3" multiple="multiple">
+<option value="first">Студент</option>
+<option selected="selected" value="second">Учень</option>
+<option value="third">Викладач</option>
+<option value="fourth">Інше</option>
+</select>
+</form>
+  
+Виберіть як часто ви нас відвідуєте<br/>
+<form  method="get">
+<input type="checkbox" name="transport" value="airplane" checked="checked" /> щотижня<br /> 
+<input type="checkbox" name="transport" value="train" /> один раз на місяць<br /> 
+<input type="checkbox" name="transport" value="car" /> дуже рідко<br /> 
+<input type="checkbox" name="transport" value="bus" /> ніколи<br /> 
+<input type="submit" value="OK" />
+<input type="reset" value="Reset" />
+</form>
+Напишіть коротко про себе<br/>
+<p><textarea name="comment" id="comment" cols="48" rows="8"> </textarea>
+</p>
+<p><input name="submit" type="submit" id="submit" value="Відправити" />
+</p>
+<hr/>
+<footer style="text-align: center;">
+<p>Orest Vasylechko 2018</p>	
+
+</footer>
+</body>
+</html>
